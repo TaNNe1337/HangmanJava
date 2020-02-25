@@ -33,8 +33,6 @@ public class UserInput {
 			Character[] guessedChar = new Character[input.maxGuesses];
 			Arrays.fill(guessedWord, '-');
 			Arrays.fill(guessedChar, Character.MIN_VALUE);
-			Stream.of(word).forEach(System.out::print);
-			System.out.println();
 			while (wrongGuesses < input.getMaxGuesses()) {
 				Stream.of(guessedWord).forEach(System.out::print);
 				System.out.println();
